@@ -1,0 +1,9 @@
+*.bak
+*.log
+.env
+.env.*
+!.env.example
+state/
+.ssh/
+*.key
+*.pem

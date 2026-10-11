@@ -1,0 +1,206 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "iterm",
+    "source": "__HOME_FWD__/.config/fastfetch/larp-logo.png",
+    "position": "left",
+    "width": 28,
+    "height": 22,
+    "padding": {
+      "top": 0,
+      "left": 1,
+      "right": 4
+    },
+    "printRemaining": false
+  },
+  "display": {
+    "separator": " ",
+    "color": {
+      "keys": "#8BD49C",
+      "title": "#9BE5D8",
+      "output": "#D8DEE9",
+      "separator": "#525A6B"
+    },
+    "key": {
+      "width": 15
+    },
+    "bar": {
+      "width": 13,
+      "char": {
+        "elapsed": "■",
+        "total": "·"
+      },
+      "border": {
+        "left": "[",
+        "right": "]"
+      },
+      "color": {
+        "elapsed": "#8BD49C",
+        "total": "#949cbb",
+        "border": "#a5adce"
+      }
+    },
+    "percent": {
+      "type": [
+        "num"
+      ],
+      "color": {
+        "green": "#8BD49C",
+        "yellow": "#E7C787",
+        "red": "#E58C9B"
+      }
+    },
+    "temp": {
+      "green": 60,
+      "yellow": 80,
+      "color": {
+        "green": "#8BD49C",
+        "yellow": "#E7C787",
+        "red": "#E58C9B"
+      }
+    },
+    "pipe": false
+  },
+  "modules": [
+    {
+      "type": "title",
+      "key": " ",
+      "format": "{##D8DEE9}Hey, {##9BE5D8}{user-name}{#}"
+    },
+    {
+      "type": "custom",
+      "format": "{##838ba7}┌────────────────{##8BD49C} Hardware {##838ba7}────────────────┐{#}"
+    },
+    {
+      "type": "host",
+      "key": "├─ PC",
+      "keyColor": "#8BD49C",
+      "format": "{name}{?version} // {version}{?}"
+    },
+    {
+      "type": "cpu",
+      "key": "├─ CPU",
+      "keyColor": "#8BD49C",
+      "temp": true,
+      "format": "{name} ({cores-physical}C / {cores-logical}T){?freq-max} @ {freq-max}{?}{?temperature} // {temperature}{?}"
+    },
+    {
+      "type": "gpu",
+      "key": "├─ GPU",
+      "keyColor": "#8BD49C",
+      "temp": true,
+      "format": "{name} [{type}]{?temperature} // {temperature}{?}"
+    },
+    {
+      "type": "memory",
+      "key": "├─ RAM",
+      "keyColor": "#8BD49C",
+      "format": "{used} / {total} {percentage-bar} {percentage}",
+      "percent": {
+        "type": [
+          "bar",
+          "num"
+        ]
+      }
+    },
+    {
+      "type": "swap",
+      "key": "├─ SWAP",
+      "keyColor": "#8BD49C",
+      "format": "{used} / {total} {percentage-bar} {percentage}",
+      "percent": {
+        "type": [
+          "bar",
+          "num"
+        ]
+      }
+    },
+    {
+      "type": "disk",
+      "key": "├─ DRIVE",
+      "keyColor": "#8BD49C",
+      "format": "{mountpoint} {size-used} / {size-total} {size-percentage-bar} {size-percentage}",
+      "percent": {
+        "type": [
+          "bar",
+          "num"
+        ]
+      }
+    },
+    {
+      "type": "display",
+      "key": "└─ DISPLAY",
+      "keyColor": "#8BD49C",
+      "format": "{width}x{height} @ {refresh-rate} Hz [{type}]"
+    },
+    {
+      "type": "custom",
+      "format": "{##838ba7}└──────────────────────────────────────────┘{#}"
+    },
+    {
+      "type": "custom",
+      "format": "{##838ba7}┌────────────────{##E7C787} Software {##838ba7}────────────────┐{#}"
+    },
+    {
+      "type": "os",
+      "key": "├─ OS",
+      "keyColor": "#E7C787",
+      "format": "{pretty-name} [{arch}]"
+    },
+    {
+      "type": "wm",
+      "key": "├─ WM",
+      "keyColor": "#E7C787",
+      "format": "{pretty-name} {version}"
+    },
+    {
+      "type": "packages",
+      "key": "├─ PACKAGES",
+      "keyColor": "#E7C787",
+      "format": "{?choco}{choco} choco · {?}{?scoop-user}{scoop-user} scoop{?}"
+    },
+    {
+      "type": "locale",
+      "key": "├─ LOCALE",
+      "keyColor": "#E7C787",
+      "format": "{result}"
+    },
+    {
+      "type": "command",
+      "key": "└─ FONT",
+      "keyColor": "#E7C787",
+      "text": "pwsh.exe -NoLogo -NoProfile -File \"__HOME_JSON__\\.config\\fastfetch\\wezterm-font.ps1\"",
+      "format": "{result}"
+    },
+    {
+      "type": "custom",
+      "format": "{##838ba7}└──────────────────────────────────────────┘{#}"
+    },
+    {
+      "type": "custom",
+      "format": "{##838ba7}┌──────────────{##D7A0C9} Uptime / Date {##838ba7}──────────────┐{#}"
+    },
+    {
+      "type": "uptime",
+      "key": "├─ UPTIME",
+      "keyColor": "#D7A0C9",
+      "format": "{formatted}"
+    },
+    {
+      "type": "datetime",
+      "key": "└─ DATE",
+      "keyColor": "#D7A0C9",
+      "format": "{year}-{month-pretty}-{day-pretty} {hour-pretty}:{minute-pretty}:{second-pretty}"
+    },
+    {
+      "type": "custom",
+      "format": "{##838ba7}└──────────────────────────────────────────┘{#}"
+    },
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "paddingLeft": 1
+    }
+  ]
+}
+
