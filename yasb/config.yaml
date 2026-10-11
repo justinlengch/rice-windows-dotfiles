@@ -42,7 +42,7 @@ bars:
         "memory",
         "weather",
         "volume",
-        "power_menu"      
+        "power_menu"
         ]
 widgets:
   cpu:
@@ -71,7 +71,7 @@ widgets:
         label_alt: "<span>\uf473</span>"
         group_label:
           volume_labels: ["C", "D", "E", "F"]
-          show_label_name: true 
+          show_label_name: true
           blur: true
           round_corners: true
           border_color: None
@@ -115,7 +115,7 @@ widgets:
           "\udb82\udd22",  # Icon for 21-40% strength
           "\udb82\udd25",  # Icon for 41-80% strength
           "\udb82\udd28"   # Icon for 81-100% strength
-      ] 
+      ]
   clock:
     type: "yasb.clock.ClockWidget"
     options:
@@ -125,7 +125,7 @@ widgets:
       timezones: []
       callbacks:
         on_left: "toggle_calendar"
-      calendar: 
+      calendar:
         blur: true
         round_corners: true
         border_color: None
@@ -155,7 +155,7 @@ widgets:
       callbacks:
         on_left: "toggle_card"
         on_middle: "toggle_label"
-      weather_card: 
+      weather_card:
         blur: true
         round_corners: true
         border_color: None
@@ -238,7 +238,7 @@ widgets:
       callbacks:
         on_left: "toggle_notification"
         on_right: "toggle_label"
-        on_middle: "do_nothing" 
+        on_middle: "do_nothing"
   memory:
     type: "yasb.memory.MemoryWidget"
     options:

@@ -83,5 +83,3 @@ lwin + alt + 3          : $app = Get-Process wezterm-gui -ErrorAction SilentlyCo
 lwin + alt + c          : Start-Process explorer.exe -ArgumentList 'shell:AppsFolder\OpenAI.Codex_2p2nqsd0c76g0!App'
 
 lwin + alt + f          : Start-Process 'C:\Program Files\WezTerm\wezterm-gui.exe' -ArgumentList 'start -- pwsh.exe -NoLogo -NoProfile -NoExit -File "__HOME_NATIVE__\.config\powershell\start-yazi.ps1"'
-
-
