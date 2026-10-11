@@ -31,5 +31,5 @@ The installer backs up existing files and sets paths for your Windows user. Remo
 
 ## Credits
 
-- **Fastfetch:** based on another creator's config, with my own changes. Creator/link to be added.
-- **YASB:** believed to be based on the Aurora theme, with my own tweaks.
+- **Fastfetch:** based on [NephVx2's Fastfetch-ricing](https://github.com/NephVx2/Fastfetch-ricing), with my own changes.
+- **YASB:** based on the Soft Segments theme, with my own tweaks.
