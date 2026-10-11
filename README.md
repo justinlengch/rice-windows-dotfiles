@@ -28,3 +28,8 @@ The installer backs up existing files and sets paths for your Windows user. Remo
 - Weather: copy `yasb/.env.example` to `~/.config/yasb/.env` and add your API key and city.
 - Yazi uses defaults. Run `y`; set `YAZI_FILE_ONE` to your Git installation's `usr\bin\file.exe` if needed.
 - Main hotkeys: Alt + H/J/K/L to focus, Alt + 1–7 for workspaces, Win + Alt + F for Yazi. Full bindings are in `whkd/whkdrc`.
+
+## Credits
+
+- **Fastfetch:** based on another creator's config, with my own changes. Creator/link to be added.
+- **YASB:** believed to be based on the Aurora theme, with my own tweaks.
